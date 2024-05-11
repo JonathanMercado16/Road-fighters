@@ -1,5 +1,5 @@
-bin/pantalla : src/pantalla.cpp
-	g++ -o bin/pantalla src/pantalla.cpp -Iinclude -lftxui-screen -lftxui-dom -lftxui-component -std=c++2a
+bin/main : src/main.cpp
+	g++ -o bin/main src/main.cpp -Iinclude -lftxui-screen -lftxui-dom -lftxui-component -std=c++2a
 
-run : bin/pantalla
-	./bin/pantalla
+run : bin/main
+	./bin/main
