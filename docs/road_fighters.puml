@@ -1,0 +1,23 @@
+@startuml roadfighters
+
+class Juego;
+{
+
+}
+class Carro_jugador;
+{
+
+}
+class Carro_enemigo;
+{
+
+}
+class Obstaculo;
+{
+
+}
+class Animacion;
+{
+
+}
+
