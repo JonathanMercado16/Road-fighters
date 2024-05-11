@@ -1,23 +1,14 @@
 @startuml roadfighters
 
-class Juego;
-{
+class Juego {}
+class Carro_jugador {}
+class Carro_enemigo {}
+class Obstaculo {}
+class Dibujo {}
 
-}
-class Carro_jugador;
-{
+Juego "1" *-- "1" Carro_jugador
+Juego "1" o-- "*" Obstaculo
+Juego "1" o-- "*" Carro_enemigo
+Juego "1" o-- "0..*" Dibujo
 
-}
-class Carro_enemigo;
-{
-
-}
-class Obstaculo;
-{
-
-}
-class Animacion;
-{
-
-}
-
+@enduml
