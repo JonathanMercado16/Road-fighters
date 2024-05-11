@@ -26,8 +26,10 @@ int main(int argc, char const *argv[])
         x++;
         pantalla.Clear();
         this_thread::sleep_for(0.1s);
-
-        pantalla.PixelAt(x,5).character = "dddd";
+        pantalla.PixelAt(x,1).character = "===========================================================================";
+        pantalla.PixelAt(x,2).character = "              /'_''_'`.__";
+        pantalla.PixelAt(x,3).character = "             (( ) _   ( ) _|";
+        pantalla.PixelAt(x,4).character = "===========================================================================";
         pantalla.Print();
         cout<<pantalla.ResetPosition();
     }
